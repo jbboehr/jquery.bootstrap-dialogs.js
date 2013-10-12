@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery.bootstrap-dialogs confirm example</title>
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script src="../jquery.bootstrap-dialogs.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.confirm("Red pill or blue pill?", function(button) {
+          if( button == 1 ) {
+            $.alert('You chose the blue pill.');
+          } else if( button == 2 ) {
+            $.alert('You chose the red pill.');
+          } else {
+            $.alert('You didn\t choose :(');
+          }
+        }, 'Which pill?', 'Red pill,Blue pill')
+      });
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery.bootstrap-dialogs prompt example</title>
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script src="../jquery.bootstrap-dialogs.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.prompt("What time is it?", function(value) {
+          if( (value + '').replace(/\s+/ig).toLowerCase() === 'hammertime' ) {
+            $.alert('Correct!');
+          } else if( value !== undefined ) {
+            $.alert('Wrong!');
+          } else {
+            $.alert('Don\'t give up!');
+          }
+        }, 'Prompt', 'Done,Cancel', "put stuff here")
+      });
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

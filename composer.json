@@ -1,0 +1,18 @@
+{
+  "authors" : [
+    {
+      "email" : "jbboehr@gmail.com",
+      "name" : "John Boehr"
+    }
+  ],
+  "description" : "Bootstrap dialogs",
+  "homepage": "http://github.com/jbboehr/jquery.bootstrap-dialogs.js",
+  "name" : "jbboehr/jquery-bootstrap-dialogs",
+  "keywords" : [
+    "jquery",
+    "bootstrap",
+    "phonegap"
+  ],
+  "license": "MIT",
+  "type" : "library"
+}
